@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+@import "./assets/styles/toastr";
+
+@import "./assets/styles/variables.scss";
+@import "./assets/styles/_igx-theme";
+
+// @import "~igniteui-angular/lib/core/styles/themes/index";
+
+// @include igx-core();
+// @include igx-theme($default-palette);
