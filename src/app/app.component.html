@@ -327,6 +327,10 @@
     </a>
 </div>
 
+
+
+
+
 <div class="content" role="main">
 
   <!-- Highlight Card -->
@@ -352,6 +356,9 @@
 
   </div>
 
+  
+    <app-user></app-user>
+  
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
@@ -514,19 +521,22 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div class="row">
-<div class="col-md-4">
-  col-1
+<div class="col-md-3">
+  <h2 routerLink="home">go to Home</h2>
 </div>
-<div class="col-md-4">
-  <button igxButton="raised"> Kaydet </button>
-  <button> Kaydet </button>
+<div class="col-md-3">
+  <h2 routerLink="role">go to Role</h2>
 </div>
-<div class="col-md-4">
-  col-3
+<div class="col-md-3">
+  <h2 routerLink="user">go to User</h2>
+</div>
+<div class="col-md-3">
+  <h2 [routerLink]="['user',7]">go to User 7 detail</h2>
 </div>
 </div>
 
-
+<router-outlet></router-outlet>
+<app-role></app-role>
 <ngx-spinner
   bdColor="rgba(51,51,51,0.8)"
   size="medium"
@@ -535,5 +545,3 @@
 >
   <p style="font-size: 20px; color: white">Loading...</p>
 </ngx-spinner>
-
-<router-outlet></router-outlet>
