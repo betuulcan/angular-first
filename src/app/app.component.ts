@@ -12,12 +12,21 @@ export class AppComponent implements OnInit {
 
 
   title = 'angular-first';
+  todos=[
+    "Yapılacak iş 1",
+    "Yapılacak iş 2",
+    "Yapılacak iş 3",
+    "Yapılacak iş 4",
+    "Yapılacak iş 5",
+    ];
 
   constructor(private toastr: ToastrService,
     private spinner: NgxSpinnerService
     ) {}
   ngOnInit() {
-    this.showSuccess();
+    //toast mesaj
+    this.showSuccess();  
+    //loading ekranı
     this.showSpinner();
   }
 
@@ -33,7 +42,7 @@ export class AppComponent implements OnInit {
       setTimeout(() => {
         /** spinner ends after 5 seconds */
         this.spinner.hide();
-      }, 5000);
+      }, 2000);
     
   }
 

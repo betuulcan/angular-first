@@ -19,7 +19,6 @@ import { UserDetailComponent } from './user/user-detail/user-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
-    
     UserComponent,
     RoleComponent,
     UserDetailComponent
